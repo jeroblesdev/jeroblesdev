@@ -1,60 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Propuesta de página web para tu negocio</title>
+<title>Jeremías Robles | Páginas web</title>
+<meta name="description" content="Páginas web para negocios de La Guardia y alrededores. Presentación, reservas y pedidos.">
+
 <style>
-:root{--bg:#d9e2da;--bub:#ffffff;--fg:#14201a;--meta:#5c6b62;--head:#1d4a42;--headfg:#f2f7f4;--hl:#e3f6dc;--line:#e4eae6;--ok:#1f9d55;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1511;--bub:#1a2924;--fg:#e9f1ec;--meta:#93a69b;--head:#12332d;--hl:#20402f;--line:#2a3d35;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0c1511;--bub:#1a2924;--fg:#e9f1ec;--meta:#93a69b;--head:#12332d;--hl:#20402f;--line:#2a3d35;color-scheme:dark}
+:root{
+--bg:#d9e2da;--bub:#fff;--fg:#14201a;
+--meta:#5c6b62;--head:#1d4a42;--headfg:#f2f7f4;
+--hl:#e3f6dc;--line:#e4eae6;--ok:#1f9d55;
+color-scheme:light;
+}
+@media(prefers-color-scheme:dark){
+:root:not([data-theme="light"]){
+--bg:#0c1511;--bub:#1a2924;--fg:#e9f1ec;
+--meta:#93a69b;--head:#12332d;--hl:#20402f;
+--line:#2a3d35;color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+--bg:#0c1511;--bub:#1a2924;--fg:#e9f1ec;
+--meta:#93a69b;--head:#12332d;--hl:#20402f;
+--line:#2a3d35;color-scheme:dark;
+}
 *{box-sizing:border-box}
-html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--head)}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:16px;line-height:1.4;padding-bottom:88px;-webkit-text-size-adjust:100%}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--head);z-index:10}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--head);color:var(--headfg);display:flex;align-items:center;gap:12px;padding:10px 16px}
-.av{flex:none;width:42px;height:42px;border-radius:50%;background:#e8c46a;color:#3a2c05;display:grid;place-items:center;font-weight:700;font-size:20px}
+html{background:var(--head)}
+body{
+margin:0;background:var(--bg);color:var(--fg);
+font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+font-size:16px;line-height:1.4;padding-bottom:78px;
+-webkit-text-size-adjust:100%;
+}
+body::before{
+content:"";position:fixed;inset:0 0 auto;
+height:env(safe-area-inset-top,0px);
+background:var(--head);z-index:10;
+}
+header{
+position:sticky;top:env(safe-area-inset-top,0px);z-index:9;
+background:var(--head);color:var(--headfg);
+display:flex;align-items:center;gap:12px;padding:10px 16px;
+}
+.av{
+flex:none;width:42px;height:42px;border-radius:50%;
+background:#e8c46a;color:#3a2c05;
+display:grid;place-items:center;font-weight:700;font-size:20px;
+}
 header strong{display:block;font-size:17px}
 header span{font-size:13px;opacity:.8}
-main{max-width:620px;margin:0 auto;padding:16px 12px;display:flex;flex-direction:column;gap:6px}
-.m{max-width:88%;background:var(--bub);padding:9px 12px 10px;border-radius:4px 14px 14px 14px;box-shadow:0 1px 1px rgba(0,0,0,.18)}
+main{
+max-width:620px;margin:0 auto;padding:14px 12px;
+display:flex;flex-direction:column;gap:6px;
+}
+.m{
+max-width:92%;background:var(--bub);
+padding:9px 12px;border-radius:4px 14px 14px 14px;
+box-shadow:0 1px 1px rgba(0,0,0,.15);
+}
 .m+.m{border-top-left-radius:14px}
 .m.hl{background:var(--hl)}
-.m small{display:block;color:var(--meta);font-size:13px;margin-top:4px}
 .m b{font-weight:700}
 .m a{color:var(--ok);font-weight:700}
-.pr{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:8px 0;border-top:1px solid var(--line)}
-.pr:first-of-type{border-top:0;padding-top:2px}
-.pr i{display:block;font-style:normal;color:var(--meta);font-size:13px}
+.m small{display:block;color:var(--meta);font-size:13px;margin-top:3px}
+.examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.examples a{
+display:inline-block;background:var(--hl);color:var(--fg);
+border-radius:18px;padding:6px 11px;font-size:13px;
+text-decoration:none;font-weight:650;
+}
+.pr{
+display:flex;justify-content:space-between;align-items:center;
+gap:10px;padding:8px 0;border-top:1px solid var(--line);
+}
+.pr:first-child{border-top:0}
 .pr strong{white-space:nowrap}
-.bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px))}
-.bar a{max-width:620px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--bub);color:var(--meta);text-decoration:none;border-radius:24px;padding:6px 6px 6px 18px;box-shadow:0 1px 2px rgba(0,0,0,.2)}
-.bar svg{flex:none;width:42px;height:42px;padding:10px;border-radius:50%;background:var(--ok);color:#fff}
+.pr i{
+display:block;font-style:normal;color:var(--meta);
+font-size:13px;
+}
+.bar{
+position:fixed;left:0;right:0;bottom:0;background:var(--bg);
+padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));
+}
+.bar a{
+max-width:620px;margin:0 auto;display:flex;
+align-items:center;justify-content:space-between;
+background:var(--bub);color:var(--meta);
+text-decoration:none;border-radius:24px;padding:6px 6px 6px 18px;
+box-shadow:0 1px 2px rgba(0,0,0,.2);
+}
+.bar svg{
+width:42px;height:42px;padding:10px;border-radius:50%;
+background:var(--ok);color:#fff;flex:none;
+}
 </style>
 </head>
+
 <body>
-<header><div class="av">J</div><div><strong>Jeremías Robles</strong><span>páginas web para digitalizar tu negocio</span></div></header>
-<main>
-<div class="m">Hola 👋 Soy Jeremías, desarrollo páginas web.</div>
-<div class="m">Hago páginas web para negocios, para que te encuentren en Google y tus clientes reserven o pidan por WhatsApp con todos los datos ya ordenados. Tú solo confirmas.</div>
-<div class="m">Así te llega una reserva:</div>
-<div class="m hl"><b>Nueva reserva</b><br>Nombre: Ana<br>Servicio: corte y uñas<br>Cuándo: jueves, 4:00 pm</div>
-<div class="m">Mira algunos ejemplos que armé:</div>
-<div class="m"><b>Pedidos para comida rápida</b><br>Con carrito y envío por WhatsApp<br><a href="https://jeroblesdev.github.io/papas_locas/">Ver ejemplo</a></div>
-<div class="m"><b>Reservas para un salón de belleza</b><br>El cliente elige servicio, fecha y hora<br><a href="https://jeroblesdev.github.io/Salon_demo/">Ver ejemplo</a></div>
-<div class="m"><b>Consultorio de psicología</b><br>Presentación y solicitud de cita por WhatsApp<br><a href="https://jeroblesdev.github.io/Psico-demo/">Ver ejemplo</a></div>
-<div class="m">Estos son los precios del primer año. Incluyen diseño, dominio y publicación:</div>
-<div class="m" style="width:88%">
-<div class="pr"><div><b>Presentación</b><i>tus servicios, fotos y horarios</i></div><strong>Bs 1.150</strong></div>
-<div class="pr"><div><b>Reservas</b><i>tus clientes piden su hora desde la página</i></div><strong>Bs 2.050</strong></div>
-<div class="pr"><div><b>Pedidos</b><i>tus clientes arman su pedido</i></div><strong>Bs 2.200</strong></div>
-<div class="pr"><div><b>A medida</b><i>lo que tu negocio necesite</i></div><strong>desde Bs 3.250</strong></div>
+
+<header>
+<div class="av">J</div>
+<div>
+<strong>Jeremías Robles</strong>
+<span>Páginas web para digitalizar tu negocio</span>
 </div>
-<div class="m">La de presentación la entrego en 3 días, y las de reservas y pedidos en 5 a 7, contando desde que me mandas tus fotos y datos.</div>
-<div class="m">Se paga la mitad para empezar y la otra mitad cuando ya está funcionando, por transferencia o QR.</div>
-<div class="m">Después, renovar dominio y publicación cuesta Bs 250 al año (Bs 400 en la de pedidos). No cobro comisión por tus reservas ni pedidos.</div>
-<div class="m">Si te interesa, escríbeme y lo vemos 🙂</div>
+</header>
+
+<main>
+
+<div class="m">
+¡Hola! 👋 Soy Jeremías.
+</div>
+
+<div class="m">
+Creo páginas web para que tus clientes conozcan tu negocio, vean tus servicios y puedan contactarte, reservar o hacer pedidos fácilmente.
+</div>
+
+<div class="m">
+  <b>¿Quieres ver cómo funcionan? 👇</b>
+  <small>Toca el ejemplo que quieras explorar:</small>
+  <br>
+  <a target="_blank" rel="noopener"
+     href="https://jeroblesdev.github.io/papas_locas/">
+     🍔 Pedidos online — Dale clic y observa →
+  </a>
+  <br><br>
+  <a target="_blank" rel="noopener"
+     href="https://jeroblesdev.github.io/Salon_demo/">
+     💇 Reservas online — Dale clic y observa →
+  </a>
+  <br><br>
+  <a target="_blank" rel="noopener"
+     href="https://jeroblesdev.github.io/Psico-demo/">
+     🩺 Página profesional — Dale clic y observa →
+  </a>
+</div>
+
+<div class="m hl">
+<b>¿Qué necesita tu negocio?</b><br>
+Estos son mis paquetes:
+</div>
+
+<div class="m" style="width:92%">
+<div class="pr">
+<div><b>Presentación</b><i>Servicios, fotos, horarios y contacto</i></div>
+<strong>Bs 1.150</strong>
+</div>
+<div class="pr">
+<div><b>Reservas</b><i>Solicitudes de citas desde tu página</i></div>
+<strong>Bs 2.050</strong>
+</div>
+<div class="pr">
+<div><b>Pedidos</b><i>Catálogo, carrito y WhatsApp</i></div>
+<strong>Bs 2.200</strong>
+</div>
+<div class="pr">
+<div><b>A medida</b><i>Funciones especiales para tu negocio</i></div>
+<strong>Desde Bs 3.250</strong>
+</div>
+</div>
+
+<div class="m">
+<b>Todos los paquetes incluyen:</b>
+<br>Diseño adaptable a celulares, dominio y publicación.
+<br><br>
+<b>Entrega:</b> presentación en 3 días; reservas y pedidos en 5 a 7 días.
+</div>
+
+<div class="m">
+<b>Forma de pago:</b> 50% para comenzar y 50% al entregar.
+<br><br>
+<b>Renovación anual:</b> Bs 250 para presentación y reservas; Bs 400 para pedidos.
+<br><small>La renovación mantiene el dominio y la publicación. No incluye cambios o nuevas funciones.</small>
+</div>
+
+<div class="m hl">
+¿Te interesa tener tu negocio en internet?
+<br>Escríbeme y conversamos sin compromiso. 🙂
+</div>
+
 </main>
-<div class="bar"><a href="https://wa.me/59163623723?text=Hola%20Jerem%C3%ADas%2C%20vi%20tu%20propuesta%20de%20p%C3%A1gina%20web">Escríbeme por WhatsApp<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 21 3l-5.5 18-3.5-7z" fill="currentColor"/></svg></a></div>
+
+<div class="bar">
+<a href="https://wa.me/59163623723?text=Hola%20Jerem%C3%ADas%2C%20vi%20tu%20propuesta%20de%20p%C3%A1gina%20web">
+Escríbeme por WhatsApp
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 11.5 21 3l-5.5 18-3.5-7z" fill="currentColor"/>
+</svg>
+</a>
+</div>
+
 </body>
 </html>
